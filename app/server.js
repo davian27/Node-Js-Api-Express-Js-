@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const supplierRoutes = require('../app/routes/supplierRoutes');
-const productRoutes = require('../app/routes/productRoutes');
+const productRoutes = require('../app/routes/productRoutes.jsx');
 const categoryRoutes = require('../app/routes/categoryRoutes');
 
 const app = express();
