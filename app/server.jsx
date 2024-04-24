@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const supplierRoutes = require('../app/routes/supplierRoutes');
-const productRoutes = require('../app/routes/productRoutes.jsx');
-const categoryRoutes = require('../app/routes/categoryRoutes');
+const supplierRoutes = require('./routes/supplierRoutes.jsx');
+const productRoutes = require('./routes/productRoutes.jsx');
+const categoryRoutes = require('./routes/categoryRoutes.jsx');
 
 const app = express();
 
@@ -27,5 +27,6 @@ app.use('/products', productRoutes);
 app.use('/categories', categoryRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server Lu Running Di Port Ini Ya Fak : Port ${PORT} kalau mager klik ini aja ya fak http://localhost:${PORT}`);
+  console.log(`Server Lu Running Di Port Ini Ya Fak : Port ${PORT}`);
+  console.log(`Method Get Product Controller http://localhost:${PORT}/products`);
 });

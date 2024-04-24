@@ -2,10 +2,10 @@
   "name": "app",
   "version": "1.0.0",
   "description": "Restfull api node js",
-  "main": "server.js",
+  "main": "server.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.jsx"
   },
   "author": "Davian Naufal",
   "license": "ISC",
